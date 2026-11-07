@@ -1,0 +1,4 @@
+# Bundle layer: load the host entry; dsh.client loads ./client for the browser half.
+- insert:
+    - id: dsh-printer
+      name: dsh-printer

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Printer",
+    "description": "Adds a Print button next to Copy on finalized assistant messages."
+  }
+}
