@@ -49,7 +49,7 @@ const bundled = await esbuild.build({
 
 const code = bundled.outputFiles[0].text
 const client = `window.__ModuleLoader__.load({
-  id: 'dsh-printer',
+  id: '@ron777/dsh-printer',
   factory(require) {
     const module = { exports: {} };
     const exports = module.exports;

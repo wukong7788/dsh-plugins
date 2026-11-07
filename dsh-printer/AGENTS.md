@@ -4,7 +4,7 @@
 
 ## 项目定位
 
-- **包名**：`dsh-printer`（npm package name 与 Cordis plugin id 是两个概念，可同名但不要混写）
+- **npm 包名**：`@ron777/dsh-printer`（无作用域名已被占用；Cordis 行 id 仍用短 id `dsh-printer`，`name` 指向 scoped 包）
 - **用途**：DeepSeek Harness（DSH）打印相关插件（具体能力面：工具 / 设置页 / 系统打印桥 — 实现前先在 issue 或本文件「产品范围」补齐）
 - **宿主实测**：本机 `dsh --version` → **`0.2.2-rc.1`**（DeepSeek Harness.app 内置 CLI）；profile 以 **`desktop`** 为主（另有空的 `web`）
 - **Node 运行时**：Harness 声明 Node `24.x` 线；插件 `engines.node` 建议对齐官方 `^22.19.0 || >=24.0.0`
@@ -99,7 +99,7 @@ dsh plugin allow-version <包@精确版本> --dsh-version <精确版本> --accep
 ```bash
 # 开发构建后再装（file: 是真实副本，改代码必须 rebuild + 重装）
 pnpm run build
-dsh plugin --profile desktop remove dsh-printer   # 版本/字节没变时 pnpm 可能复用缓存
+dsh plugin --profile desktop remove @ron777/dsh-printer   # 版本/字节没变时 pnpm 可能复用缓存
 dsh plugin --profile desktop add file:$PWD
 
 # 确认配置树里出现本包

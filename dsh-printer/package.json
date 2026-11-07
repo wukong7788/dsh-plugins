@@ -1,10 +1,23 @@
 {
-  "name": "dsh-printer",
+  "name": "@ron777/dsh-printer",
   "version": "0.1.2",
   "description": "Add a Print button next to Copy on finalized assistant messages in DeepSeek Harness.",
   "type": "module",
   "license": "Apache-2.0",
   "icon": "./icon.svg",
+  "author": "ron777",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wukong7788/dsh-plugins.git",
+    "directory": "dsh-printer"
+  },
+  "homepage": "https://github.com/wukong7788/dsh-plugins/tree/main/dsh-printer",
+  "bugs": {
+    "url": "https://github.com/wukong7788/dsh-plugins/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "dsh",
     "dsh-plugin",

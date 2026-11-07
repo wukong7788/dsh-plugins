@@ -20,7 +20,7 @@ const en = {
   'preview.close': 'Close',
 }
 
-export const name = 'dsh-printer'
+export const name = '@ron777/dsh-printer'
 
 /** Slot registry + locale dictionaries. */
 export const inject = ['slots', 'locale']

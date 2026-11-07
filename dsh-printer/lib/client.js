@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: 'dsh-printer',
+  id: '@ron777/dsh-printer',
   factory(require) {
     const module = { exports: {} };
     const exports = module.exports;
@@ -544,7 +544,7 @@ window.__ModuleLoader__.load({
       "preview.cancel": "Cancel",
       "preview.close": "Close"
     };
-    var name = "dsh-printer";
+    var name = "@ron777/dsh-printer";
     var inject = ["slots", "locale"];
     function apply(ctx) {
       ctx.effect(() => ctx.locale.register(NS, { zh, en }), "dsh-printer: dictionaries");
